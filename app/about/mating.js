@@ -22,16 +22,16 @@ const faqs = [
   {
     id: 4,
     question:
-      "How many heat cycles should a female dog have before breeding?",
+      "How long of an interval should be maintained before a female dog is allowed to mate again?",
     answer:
-      "A minimum waiting period of 4 months between heat cycles is recommended before breeding a female dog.",
+      "Each dog has a different heat cycle, which can vary from 4 months, 6 months, to even a year. In rare cases, some dogs may only come into heat every 2 years. Ideally, it's best to wait at least one year or until the next heat cycle after a year before allowing the dog to mate again.",
   },
   {
     id: 5,
     question:
       "What are the consequences of frequent breeding?",
     answer:
-      "Breeding too soon can lead to health complications in the mother, such as a reduced platelet count and fever.",
+      "Mating either a male or female dog in quick succession can lead to reduced immunity, lower platelet counts, and an increased risk of urinary infections. Additionally, the puppies may not be born in optimal health.",
   },
 ];
 

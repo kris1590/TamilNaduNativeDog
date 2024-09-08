@@ -68,7 +68,7 @@ export default function Contact() {
                       href="mailto:jponram19@gmail.com"
                       className="hover:text-gray-900"
                     >
-                      jponram19@gmail.com
+                      tamilnadunativedogs@gmail.com
                     </a>
                   </dd>
                 </div>
