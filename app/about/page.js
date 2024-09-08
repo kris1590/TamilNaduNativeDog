@@ -81,7 +81,7 @@ export default function About() {
       </div>
       <section className="w-full py-4 md:py-12 lg:py-12 bg-[#F5F5F5]">
         <h2 className="text-3xl font-bold tracking-tight lg:text-4xl text-center    ">
-          Scented Hound Characterestics
+          Scented Hound Characteristics
         </h2>
         <p className="mt-4 w-3/4 text-lg leading-8 text-gray-600 text-justify mx-auto max-w-screen-md ">
           The native dogs of Tamil Nadu are predominantly
@@ -116,7 +116,7 @@ export default function About() {
         </p>
       </section>
       <h2 className="text-3xl font-bold tracking-tight lg:text-4xl text-center mt-8 ">
-        Specific Characterestics
+        Specific Characteristics
       </h2>
       <div className="w-3/4  flex flex-col m-auto mt-2">
         <Card characterestics={specifcCharacterestics} />
