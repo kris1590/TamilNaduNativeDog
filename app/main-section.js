@@ -85,7 +85,7 @@ export default function MainSection() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="space-y-4 flex flex-col items-center">
                 <img
-                  src="/Chippiparai.jpg"
+                  src="/Chippiparai_Main.jpg"
                   width={400}
                   height={400}
                   alt="Breed 1"
