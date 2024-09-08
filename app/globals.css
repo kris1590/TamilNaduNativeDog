@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  background-color: white;
+}
+html {
+  /* height: 100%;  */
+  background-color: white;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: black;
+  background-color: white;
+  line-height: 2;
+  /* height: 100%; */
+}
+
+@layer base {
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
