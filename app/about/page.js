@@ -14,9 +14,9 @@ const dogCharacteristics = [
       "It’s essential to provide adequate food supplements and minerals to these breeds. These nutrients fill any gaps left by regular food and are critical during the first year, building a strong foundation. After this period, they will begin to function at their peak potential.",
   },
   {
-    heading: "Avoid Early Use of Belts",
+    heading: "Avoid Early Use of Collar's",
     content:
-      "Using belts or harnesses too early can lead to skin problems and mental stress. For the first 18 months, it’s best to avoid the constant use of belts indoors. While it’s fine to use a belt for walking, allowing them to roam freely inside helps support their natural growth and intelligence.",
+      "Using collar's or harnesses too early can lead to skin problems and mental stress. For the first 18 months, it’s best to avoid the constant use of collar's indoors. While it’s fine to use a collar for walking, allowing them to roam freely inside helps support their natural growth and intelligence.",
   },
   {
     heading: "Freedom to Roam",
