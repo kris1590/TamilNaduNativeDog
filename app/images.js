@@ -35,7 +35,7 @@ export const RAJAPALAYAM_IMAGES = [
 
 export const CHIPPI_IMAGES = [
   {
-    src: "/chippi1.jpg",
+    src: "/Chippi1.jpg",
     alt: "A Picture Of Chippiparai Dog",
   },
   {
@@ -66,39 +66,39 @@ export const CHIPPI_IMAGES = [
 
 export const KANNI_IMAGES = [
   {
-    src: "/kanni1.jpg",
+    src: "/Kanni1.jpg",
     alt: "A Picture of Kanni Dog",
   },
   {
-    src: "/kanni2.jpg",
+    src: "/Kanni2.jpg",
     alt: "A Picture of Kanni Dog",
   },
   {
-    src: "/kanni3.jpg",
+    src: "/Kanni3.jpg",
     alt: "A Picture of Kanni Dog",
   },
   {
-    src: "/kanni4.jpg",
+    src: "/Kanni4.jpg",
     alt: "A Picture of Kanni Dog",
   },
   {
-    src: "/kanni5.jpg",
+    src: "/Kanni5.jpg",
     alt: "A Picture of Kanni Dog",
   },
   {
-    src: "/kanni6.jpg",
+    src: "/Kanni6.jpg",
     alt: "A Picture of Kanni Dog",
   },
   {
-    src: "/kanni7.jpg",
+    src: "/Kanni7.jpg",
     alt: "A Picture of Kanni Dog",
   },
   {
-    src: "/kanni8.jpg",
+    src: "/Kanni8.jpg",
     alt: "A Picture of Kanni Dog",
   },
   {
-    src: "/kanni9.jpg",
+    src: "/Kanni9.jpg",
     alt: "A Picture of Kanni Dogs",
   },
 ];
