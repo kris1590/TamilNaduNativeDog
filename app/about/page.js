@@ -81,7 +81,7 @@ export default function About() {
       </div>
       <section className="w-full py-4 md:py-12 lg:py-12 bg-[#F5F5F5]">
         <h2 className="text-3xl font-bold tracking-tight lg:text-4xl text-center    ">
-          Sceneted Hound Characterestics
+          Scented Hound Characterestics
         </h2>
         <p className="mt-4 w-3/4 text-lg leading-8 text-gray-600 text-justify mx-auto max-w-screen-md ">
           The native dogs of Tamil Nadu are predominantly
