@@ -4,7 +4,7 @@ import {
   RAJAPALAYAM_IMAGES,
   CHIPPI_IMAGES,
   KANNI_IMAGES,
-} from "../images.js";
+} from "../static-content.js";
 export default function Gallery() {
   return (
     <>
