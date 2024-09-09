@@ -33,7 +33,7 @@ export default function MainCultureSection() {
         </div>
         <div className="my-8 lg:col-span-2 flex justify-center">
           <img
-            src="/temple.jpg"
+            src="/Temple.jpg"
             alt="temple in rajapalayam"
             height={600}
             width={600}
