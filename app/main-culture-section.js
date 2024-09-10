@@ -1,12 +1,12 @@
 export default function MainCultureSection() {
   return (
     <>
-      <section className="px-8  text-center rounded-md bg-stone-200 grid col-span-1 md:grid-cols-2 lg:grid-cols-4  ">
-        <div className="flex flex-col mx-8 justify-center lg:col-span-2 md:mx-12 ">
+      <section className="px-8   rounded-md bg-stone-200 grid col-span-1 md:grid-cols-2 lg:grid-cols-4  ">
+        <div className="flex flex-col  justify-center lg:col-span-2 md:mx-12 ">
           <h1 className="text-4xl mt-4 my-4 text-center font-bold tracking-tighter rounded-lg bg-muted px-3 py-1 lg:mb-8">
             Where Gods and Guardians Unite
           </h1>
-          <p>
+          <p className="text-justify">
             In Rajapalayam, within a small town called
             Alangulam, stands the Shree Arulmigu
             Thalakkudaiyaar Ayyanaar Swamy Temple, where the
@@ -15,10 +15,10 @@ export default function MainCultureSection() {
             a deity associated with a particular family or
             caste, though many families may share the same
             deity. One such deity is Ayyanar Swamy,
-            worshipped by families from 34 nearby villages.
-            A unique belief surrounds Bhairava, a dog, who
-            serves as the guardian of Ayyanar, the main
-            deity. Before approaching Ayyanar in the
+            worshipped by families from fifty six nearby
+            villages. A unique belief surrounds Bhairava, a
+            dog, who serves as the guardian of Ayyanar, the
+            main deity. Before approaching Ayyanar in the
             temple's sanctum, devotees must first seek
             Bhairava's permission, highlighting the deep
             reverence for the dog. This respect extends to
@@ -37,6 +37,7 @@ export default function MainCultureSection() {
             alt="temple in rajapalayam"
             height={600}
             width={600}
+            className="rounded-md"
           ></img>
         </div>
       </section>
