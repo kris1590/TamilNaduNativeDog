@@ -1,4 +1,4 @@
-import NavBar from "../Navbar";
+import NavBar from "../components/Navbar";
 import Card from "./card";
 import Mating from "./mating";
 

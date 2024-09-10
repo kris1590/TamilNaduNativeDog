@@ -3,7 +3,7 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
-import NavBar from "../Navbar";
+import NavBar from "../components/Navbar";
 
 export default function Contact() {
   return (

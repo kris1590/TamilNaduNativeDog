@@ -8,7 +8,7 @@ import {
   RAJAPALAYAM_CONTENT,
   CHIPPIPARAI_CONTENT,
   KANNI_CONTENT,
-} from "./static-content.js";
+} from "../static-content.js";
 import MainHeroSection from "./main-hero-section";
 import MainFooter from "./main-footer";
 export default function MainSection() {
