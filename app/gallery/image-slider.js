@@ -15,6 +15,7 @@ export default function ImageSlider({ images }) {
         autoHeight={true}
         spaceBetween={20}
         navigation={true}
+        loop={true}
         pagination={{
           clickable: true,
         }}
