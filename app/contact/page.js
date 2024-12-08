@@ -72,6 +72,25 @@ export default function Contact() {
                     </a>
                   </dd>
                 </div>
+                <div>
+                  You can send your contributions to the
+                  following account:
+                  <div>
+                    <div>
+                      {" "}
+                      Account Name: J. Ponramasubramanian
+                    </div>
+                    <div>
+                      Account Number: 445 685 679 Bank Name
+                    </div>
+                    <div>
+                      Indian Bank Branch: TVS Nagar Branch
+                    </div>
+                    <div>
+                      Madurai IFSC Code: IDIB000T075
+                    </div>
+                  </div>
+                </div>
               </dl>
             </div>
           </div>
