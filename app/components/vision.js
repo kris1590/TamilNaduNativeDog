@@ -1,3 +1,5 @@
+import Container from "./ui/Container";
+
 export default function Vision({
   heading,
   content,
@@ -5,25 +7,33 @@ export default function Vision({
   aspect,
 }) {
   return (
-    <>
-      <section className=" mt-8 my-8 py-4 px-4 rounded-md bg-stone-200  grid gap-4 md:grid-cols-2 lg:grid-cols-4 ">
-        <div className="col-span-1 mx-8 md:col-span-2 lg-col-span-1 flex flex-col justify-center md:mx-36 lg:mx-24">
-          <h1 className="text-4xl mt-4 my-4 text-center font-bold tracking-tighter rounded-lg bg-muted px-3 py-1 lg:mb-8 ">
+    <Container>
+      <div className="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
+        {/* Content Section */}
+        <div className="space-y-6 text-center lg:text-left">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 tracking-tight">
             {heading}
-          </h1>
-
-          <p className="text-muted-foreground  lg:text-xl text-center">
+          </h2>
+          
+          <p className="text-lg md:text-xl text-neutral-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
             {content}
           </p>
         </div>
-        <div className="col-span-1 md:col-span-2 lg:col-span-2 ">
-          <img
-            src={image}
-            alt="two dogs playing"
-            className={`rounded-md ${aspect}`}
-          />
+
+        {/* Image Section */}
+        <div className="relative group">
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <img
+              src={image}
+              alt="Native dog breeds of Tamil Nadu"
+              className={`w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105 ${aspect}`}
+            />
+          </div>
+          
+          {/* Subtle overlay on hover */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
         </div>
-      </section>
-    </>
+      </div>
+    </Container>
   );
 }

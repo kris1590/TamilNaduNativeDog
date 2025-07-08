@@ -11,38 +11,59 @@ import {
 } from "../static-content.js";
 import MainHeroSection from "./main-hero-section";
 import MainFooter from "./main-footer";
+import Container from "./ui/Container";
+import { SECTION_HEADINGS } from "../../lib/constants";
+
 export default function MainSection() {
   return (
     <>
       <main className="flex-1">
-        <section className="w-full py-4 md:py-24 lg:py-32 bg-[url('/HeroPic.jpg')] bg-cover bg-center">
+        {/* Hero Section */}
+        <section className="relative w-full py-16 md:py-24 lg:py-32 bg-[url('/HeroPic.jpg')] bg-cover bg-center bg-no-repeat">
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
           <MainHeroSection />
         </section>
-        <Vision
-          image={"/OwnerWithDogs.jpg"}
-          heading="Our Vision"
-          content={VISION_CONTENT}
-          aspect={"aspect-[4/3]"}
-        />
-        <Vision
-          image={"/rajapalayam20.jpg"}
-          heading="Our Mission"
-          content={MISSION_CONTENT}
-          aspect={"aspect-auto"}
-        />
-        <Vision
-          image={"/Rajapalayam19.jpg"}
-          heading="Get Involved"
-          content={GET_INVOLVED_CONTENT}
-          aspect={"aspect-auto"}
-        />
 
-        <section className="w-full py-4 md:py-4 lg:py-8 bg-white">
-          <h1 className=" text-4xl mb-4 text-center font-bold tracking-tighter rounded-lg bg-muted px-3 py-1 md:mb-8 lg:mb-8">
-            Guardians of Tradition: The Timeless Native
-            Breeds of Tamil Nadu
-          </h1>
-          <div className="container m-auto px-4 md:px-6">
+        {/* Vision Section */}
+        <section className="section-padding bg-neutral-50">
+          <Vision
+            image={"/OwnerWithDogs.jpg"}
+            heading={SECTION_HEADINGS.vision}
+            content={VISION_CONTENT}
+            aspect={"aspect-[4/3]"}
+          />
+        </section>
+
+        {/* Mission Section */}
+        <section className="section-padding bg-white">
+          <Vision
+            image={"/rajapalayam20.jpg"}
+            heading={SECTION_HEADINGS.mission}
+            content={MISSION_CONTENT}
+            aspect={"aspect-auto"}
+          />
+        </section>
+
+        {/* Get Involved Section */}
+        <section className="section-padding bg-neutral-50">
+          <Vision
+            image={"/Rajapalayam19.jpg"}
+            heading={SECTION_HEADINGS.getInvolved}
+            content={GET_INVOLVED_CONTENT}
+            aspect={"aspect-auto"}
+          />
+        </section>
+
+        {/* Native Breeds Section */}
+        <section className="section-padding bg-white">
+          <Container>
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-6 tracking-tight">
+                {SECTION_HEADINGS.breeds}
+              </h2>
+            </div>
+            
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <NativeBreedHero
                 image={"/Chippiparai_Main.jpg"}
@@ -50,7 +71,7 @@ export default function MainSection() {
                 content={CHIPPIPARAI_CONTENT}
                 width={"400"}
                 height={"400"}
-                alt={"Breed 1"}
+                alt={"Chippiparai Dog Breed"}
               />
               <NativeBreedHero
                 image={"/rajapalayam.jpg"}
@@ -58,7 +79,7 @@ export default function MainSection() {
                 content={RAJAPALAYAM_CONTENT}
                 width={"400"}
                 height={"400"}
-                alt={"Breed 2"}
+                alt={"Rajapalayam Dog Breed"}
               />
               <NativeBreedHero
                 image={"/kanni.jpg"}
@@ -66,13 +87,17 @@ export default function MainSection() {
                 content={KANNI_CONTENT}
                 width={"385"}
                 height={"385"}
-                alt={"Breed 3"}
+                alt={"Kanni Dog Breed"}
               />
             </div>
-          </div>
+          </Container>
         </section>
+
+        {/* Culture Section */}
         <MainCultureSection />
-        <section className="w-full py-12 md:py-24 lg:py-32 ">
+
+        {/* Footer Section */}
+        <section className="section-padding bg-neutral-900">
           <MainFooter />
         </section>
       </main>

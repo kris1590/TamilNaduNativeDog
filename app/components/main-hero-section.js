@@ -1,30 +1,49 @@
+import Button from "./ui/Button";
+import Container from "./ui/Container";
+import { HERO_CONTENT, BUTTON_TEXT } from "../../lib/constants";
+
 export default function MainHeroSection() {
   return (
-    <div className="container px-4 md:px-6 text-center">
-      <div className="max-w-3xl  space-y-4">
-        <h1 className="text-2xl font-bold text-white tracking-tighter sm:text-3xl md:text-4xl md:w-full  drop-shadow-sm">
-          Preserving the Lineage and Heritage of Tamil
-          Nadu's Native Dog Breeds
-        </h1>
+    <Container className="relative z-10">
+      <div className="max-w-4xl mx-auto text-center space-y-8">
+        {/* Main heading with gradient text */}
+        <div className="space-y-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight drop-shadow-lg">
+            <span className="text-gradient">{HERO_CONTENT.title}</span>
+          </h1>
+          
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-white/90 tracking-tight drop-shadow-md">
+            {HERO_CONTENT.subtitle}
+          </h2>
+          
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+            {HERO_CONTENT.description}
+          </p>
+        </div>
 
-        <div className="flex justify-center items-end md:items-start lg:items-start gap-4">
-          <a
+        {/* Call-to-action buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <Button 
+            variant="primary" 
+            size="lg"
+            className="w-full sm:w-auto"
+            as="a"
             href="/about"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-blue-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            prefetch={false}
           >
-            Learn More
-          </a>
-          <a
+            {BUTTON_TEXT.learnMore}
+          </Button>
+          
+          <Button 
+            variant="outline" 
+            size="lg"
+            className="w-full sm:w-auto bg-white/10 border-white/20 text-white hover:bg-white hover:text-neutral-900"
+            as="a"
             href="/contact"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-blue-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-            prefetch={false}
           >
-            Contact Us
-          </a>
-          <div className="py-28"></div>
+            {BUTTON_TEXT.contactUs}
+          </Button>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

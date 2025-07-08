@@ -2,50 +2,47 @@
 import { usePathname } from "next/navigation";
 import { DisclosureButton } from "@headlessui/react";
 import Link from "next/link";
+
 export default function NavLink({ href, children }) {
   const pathName = usePathname();
   const isActive = (path) => {
     return pathName === path;
   };
+  
   return (
-    <>
-      <Link
-        href={href}
-        className={`inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium 
-                   ${
-                     isActive(href)
-                       ? "border-indigo-500 text-gray-900 border-t-2"
-                       : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                   }
-                `}
-      >
-        {children}
-      </Link>
-    </>
+    <Link
+      href={href}
+      className={`inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 ease-in-out
+                 ${
+                   isActive(href)
+                     ? "bg-primary-50 text-primary-700 border border-primary-200"
+                     : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50"
+                 }
+              `}
+    >
+      {children}
+    </Link>
   );
 }
 
 export function MobileNavLink({ href, children }) {
   const pathName = usePathname();
   const isActive = (path) => {
-    console.log("Current path:", pathName); // Logs the current path
     return pathName === path;
   };
 
   return (
-    <>
-      <DisclosureButton
-        as="a"
-        href={href}
-        className={`block   py-2 pl-3 pr-4 text-base font-medium
-              ${
-                isActive(href)
-                  ? "bg-indigo-50 border-l-4 border-solid  border-indigo-500  text-indigo-700"
-                  : " text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 border-transparent"
-              }`}
-      >
-        {children}
-      </DisclosureButton>
-    </>
+    <DisclosureButton
+      as="a"
+      href={href}
+      className={`block w-full text-left px-4 py-3 text-base font-medium rounded-lg transition-all duration-200 ease-in-out
+            ${
+              isActive(href)
+                ? "bg-primary-50 text-primary-700 border border-primary-200"
+                : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50"
+            }`}
+    >
+      {children}
+    </DisclosureButton>
   );
 }
