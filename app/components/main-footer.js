@@ -22,7 +22,7 @@ export default function MainFooter() {
             <Button 
               variant="primary" 
               size="lg"
-              className="w-full sm:w-auto bg-primary-600 text-black hover:bg-primary-700 hover:text-white"
+              className="w-full sm:w-auto  hover:text-white"
               as={Link}
               href="/about"
             >
