@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <>
       <NavBar />
-      
+
       <main className="pt-16">
         <Container>
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
@@ -23,7 +23,7 @@ export default function Contact() {
                 <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 tracking-tight">
                   Get in touch
                 </h1>
-                
+
                 <p className="text-lg text-neutral-600 leading-relaxed">
                   Have questions or want to learn more about these remarkable native dogs? Whether you're curious about specific breeds, interested in our research/breeding facility project, or have information on other native dog breeds, we'd love to hear from you!
                 </p>
@@ -39,17 +39,17 @@ export default function Contact() {
                       <p className="text-neutral-600">Madurai, India</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-4">
                     <PhoneIcon className="h-6 w-6 text-primary-600" />
                     <div>
                       <p className="font-medium text-neutral-900">Phone</p>
-                      <a href="tel:+91 90858 88888" className="text-primary-600 hover:text-primary-700">
-                        +91 90858 88888
+                      <a href="tel:+91 96293 77777" className="text-primary-600 hover:text-primary-700">
+                        +91 96293 77777
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-4">
                     <EnvelopeIcon className="h-6 w-6 text-primary-600" />
                     <div>
@@ -102,7 +102,7 @@ export default function Contact() {
                         placeholder="Enter your first name"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="last-name" className="block text-sm font-medium text-neutral-900 mb-2">
                         Last name

@@ -92,7 +92,7 @@ const specifcCharacterestics = [
   {
     heading: "Chippiparai",
     content:
-      "The Chippiparai is a hunting breed with a strong instinct for tracking and chasing prey. Their natural talents make them ideal for farmhouse environments, where they can roam freely and put their hunting skills to use. These dogs come in a range of shades, described in Tamil, including Pulla (Light brown or Fawn), Karambai (Creamy white), Santhana pillai (Sandalwood color), Mayilai (Peacock blue/green), Rethha sevalai (Reddish brown), Sevalai (Brown), Marai (Dark brown or Muddy brown), Semmarai (Reddish brown), Karumarai (Dark brown or Blackish brown), Vatta semmarai (Round reddish brown spots), Vatta karumarai (Round dark brown spots), and Thaen karambai (Honey cream).",
+      "The Chippiparai is a hunting breed with a strong instinct for tracking and chasing prey. Their natural talents make them ideal for farmhouse environments, where they can roam freely and put their hunting skills to use. These dogs come in a range of shades, described in Tamil, including Pulla (Light brown or Fawn), Karambai (Creamy white), Santhana pillai (Sandalwood color), Mayilai (Curdy white), Rethha sevalai (Reddish brown), Sevalai (Brown), Marai (Dark brown or Muddy brown), Semmarai (Reddish brown), Karumarai (Dark brown or Blackish brown), Vatta semmarai (Round reddish brown spots), Vatta karumarai (Round dark brown spots), and Thaen karambai (Honey cream).",
     highlights: [
       "Hunting breed with strong tracking instincts",
       "Ideal for farmhouse environments",
@@ -207,9 +207,8 @@ function ExpandableSection({ title, children, defaultExpanded = false }) {
       >
         <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
         <svg
-          className={`w-5 h-5 text-neutral-500 transition-transform ${
-            isExpanded ? 'rotate-180' : ''
-          }`}
+          className={`w-5 h-5 text-neutral-500 transition-transform ${isExpanded ? 'rotate-180' : ''
+            }`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -268,15 +267,15 @@ export default function About() {
                   Understanding the true nature of Tamil Nadu's native dogs as scented hounds
                 </p>
               </div>
-              
+
               {/* Quick Overview */}
               <div className="bg-white rounded-xl p-6 border border-neutral-200">
                 <h3 className="text-xl font-semibold text-neutral-900 mb-4">
                   Quick Overview
                 </h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  Native dogs of Tamil Nadu are classified as scented hounds, not sight hounds. 
-                  They can detect and identify people, animals, or objects even while in deep sleep, 
+                  Native dogs of Tamil Nadu are classified as scented hounds, not sight hounds.
+                  They can detect and identify people, animals, or objects even while in deep sleep,
                   showcasing their remarkable olfactory abilities.
                 </p>
               </div>
@@ -286,7 +285,7 @@ export default function About() {
                 <ExpandableSection title="Exceptional Scent Detection" defaultExpanded={true}>
                   <div className="space-y-3 text-neutral-600 leading-relaxed">
                     <p>
-                      These dogs can detect and identify people, animals, or objects even while in deep sleep, 
+                      These dogs can detect and identify people, animals, or objects even while in deep sleep,
                       showcasing their remarkable olfactory abilities.
                     </p>
                     <ul className="space-y-2 ml-4">
@@ -309,7 +308,7 @@ export default function About() {
                 <ExpandableSection title="Military & Security Applications">
                   <div className="space-y-3 text-neutral-600 leading-relaxed">
                     <p>
-                      Their exceptional scent skills make them valuable in military and army operations, 
+                      Their exceptional scent skills make them valuable in military and army operations,
                       trained to detect bombs and critical evidence.
                     </p>
                     <ul className="space-y-2 ml-4">
@@ -332,7 +331,7 @@ export default function About() {
                 <ExpandableSection title="Historical Hunting Role">
                   <div className="space-y-3 text-neutral-600 leading-relaxed">
                     <p>
-                      Historically used primarily for hunting, these dogs could sense animals in concealed hideouts, 
+                      Historically used primarily for hunting, these dogs could sense animals in concealed hideouts,
                       offering protection to their owners from hidden dangers.
                     </p>
                     <ul className="space-y-2 ml-4">
@@ -355,7 +354,7 @@ export default function About() {
                 <ExpandableSection title="Home Protection">
                   <div className="space-y-3 text-neutral-600 leading-relaxed">
                     <p>
-                      When guarding homes or farmhouses, these dogs can detect external entities like other animals 
+                      When guarding homes or farmhouses, these dogs can detect external entities like other animals
                       or creatures, providing protection even if they are asleep or in another part of the house.
                     </p>
                     <ul className="space-y-2 ml-4">
@@ -387,7 +386,7 @@ export default function About() {
                 Specific Characteristics
               </h2>
             </div>
-            
+
             <div className="max-w-4xl mx-auto">
               <Card characterestics={specifcCharacterestics} />
             </div>
